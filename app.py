@@ -50,7 +50,7 @@ def format_results(parent, results):
         "total_allocated_ips": results["total_allocated_ips"],
         "total_free_ips": results["total_free_ips"],
         "allocated_subnets": [{"subnet": str(n), "ip_count": n.num_addresses} for n in results["allocated_subnets"]],
-        "free_blocks": [{"subnet": str(n), "ip_count": n.num_addresses} for n in results["free_blocks]],
+        "free_blocks": [{"subnet": str(n), "ip_count": n.num_addresses} for n in results["free_blocks"]],
     }
 
 @app.get("/")
